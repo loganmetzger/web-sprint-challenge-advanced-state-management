@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { connect } from "react-redux"
 import { getSmurfs } from "../store/actions/smurfActions"
+import { SmurfContainer } from '../components/SmurfContainer'
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Smurfing up this sprint</h1>
+        <SmurfContainer />
       </div>
     );
   }

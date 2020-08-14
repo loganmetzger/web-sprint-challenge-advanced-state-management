@@ -5,7 +5,9 @@ function SmurfContainer(props){
 
 
     return(
-        <div></div>
+        <div>
+
+        </div>
     )
 }
 

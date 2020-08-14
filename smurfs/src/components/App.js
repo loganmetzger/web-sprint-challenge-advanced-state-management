@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { connect } from "react-redux"
 import { getSmurfs } from "../store/actions/smurfActions"
-import { SmurfContainer } from '../components/SmurfContainer'
+import SmurfContainer  from './SmurfContainer'
 
 class App extends Component {
   constructor(props) {

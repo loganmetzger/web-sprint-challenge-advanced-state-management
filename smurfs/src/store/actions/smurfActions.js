@@ -8,7 +8,8 @@ export const getSmurfs = () => (dispatch) => {
     dispatch({ type: SMURF_LOADING })
     axios.get('http://localhost:3333/smurfs')
         .then(res => {
-            console.log(res)
+            dispatch({ type: SMURF_SUCCESS, payload: res.data })
+            console.log(res.data)
         })
         .catch(err => {
             dispatch({ type: SMURF_FAIL, payload: err })

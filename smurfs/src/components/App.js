@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
+        <h1>Smurfing up this sprint</h1>
       </div>
     );
   }
